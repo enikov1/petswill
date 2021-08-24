@@ -1867,8 +1867,10 @@ body {
   }
 }
 
-.section_calc__left-selected .selected_items .item_color:nth-child(4n) {
-  margin-right: 0;
+@media (max-width: 540px) {
+  .section_calc__left-selected .selected_items .item_color:nth-child(4n) {
+    margin-right: 0;
+  }
 }
 
 .section_calc__left-selected .selected_items .item_color:nth-child(5n) {

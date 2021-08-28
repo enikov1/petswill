@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 const item_color = document.querySelectorAll('.item_color input');
 const item_type = document.querySelectorAll('.js_select_type input');
 const image_loop_change = document.querySelector('.js-image-change');
@@ -57,6 +59,152 @@ if(tab_button) {
 
 	});
 }
+
+// popup
+
+const button_header_phone = document.getElementById('button_header_phone');
+const button_header_burger = document.getElementById('button_header_burger');
+const button_header_call = document.getElementById('button_header_call');
+const button_header_smart_call = document.querySelectorAll('.button_header_smart_call');
+
+const modal_contact = document.getElementById('modal_contact');
+const modal_menu = document.getElementById('modal_menu');
+const modal_phone = document.getElementById('modal_phone');
+const modal_message = document.getElementById('modal_message');
+const modal_success = document.getElementById('modal_success');
+
+const modal_close = document.querySelectorAll('.popup_modal__close');
+
+const form_event = document.querySelectorAll('.js_form');
+
+document.querySelectorAll('a[href^="#"').forEach(link => {
+
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        let href = this.getAttribute('href').substring(1);
+
+        const scrollTarget = document.getElementById(href);
+		const header_top_height = document.querySelector('.header__top').clientHeight;
+        let topOffset = 0;
+        const elementPosition = scrollTarget.getBoundingClientRect().top;
+
+		if(window.matchMedia('(max-width: 1200px)').matches === true) {
+			topOffset = header_top_height;
+		}
+
+        const offsetPosition = elementPosition - topOffset;
+
+		if(modal_menu.classList.contains('active')) {
+			modal_menu.classList.remove('active');
+			button_header_burger.classList.remove('active');
+		}
+
+        window.scrollBy({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
+if(button_header_phone) {
+	button_header_phone.addEventListener('click', function(event) {
+		event.preventDefault();
+
+		if(modal_menu.classList.contains('active')) {
+			modal_menu.classList.remove('active');
+			button_header_burger.classList.remove('active');
+		}
+
+		this.classList.toggle('active');
+
+		modal_contact.classList.toggle('active');
+		
+	})
+}
+
+if(button_header_burger) {
+	button_header_burger.addEventListener('click', function(event) {
+		event.preventDefault();
+
+		if(modal_contact.classList.contains('active')) {
+			modal_contact.classList.remove('active');
+			button_header_phone.classList.remove('active');
+		}
+
+		this.classList.toggle('active');
+
+		modal_menu.classList.toggle('active');
+	})
+}
+
+if(button_header_call) {
+	button_header_call.addEventListener('click', function(event) {
+		event.preventDefault();
+
+		
+
+		modal_phone.classList.add('active');
+	})
+}
+
+if(modal_close) {
+	modal_close.forEach(e => {
+		e.addEventListener('click', function(event) {
+			event.preventDefault();
+
+			this.parentNode.parentNode.classList.remove('active');
+		})
+	});
+}
+
+if(button_header_smart_call) {
+	button_header_smart_call.forEach(e => {
+		e.addEventListener('click', function(event) {
+			event.preventDefault();
+
+			if(modal_contact.classList.contains('active')) {
+				modal_contact.classList.remove('active');
+				button_header_phone.classList.remove('active');
+			}
+			if(modal_menu.classList.contains('active')) {
+				modal_menu.classList.remove('active');
+				button_header_burger.classList.remove('active');
+			}
+
+			modal_phone.classList.add('active');
+		})
+	});
+	
+}
+
+if(form_event) {
+
+	form_event.forEach(e => {
+
+		e.addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			if(modal_phone.classList.contains('active')) modal_phone.classList.remove('active');
+			if(modal_message.classList.contains('active')) modal_message.classList.remove('active');
+
+			modal_success.classList.add('active');
+		});
+
+	});
+}
+
+const phoneElement = document.querySelectorAll('.js_phone_mask');
+if(phoneElement) {
+	const maskOptions = {
+		mask: '{8} 000 000 00 00'
+	};
+	phoneElement.forEach(e => {
+		const mask = IMask(e, maskOptions);
+	});
+	
+}
+
 
 
 // sliders

@@ -2989,6 +2989,20 @@ textarea.field {
   }
 }
 
+@media (max-width: 540px) {
+  .section_calc .swiper-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section_calc__header {
   margin-bottom: 2rem;
 }
@@ -3036,6 +3050,12 @@ textarea.field {
 @media (max-width: 899px) {
   .section_calc .swiper-slide {
     height: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .section_calc .swiper-slide {
+    overflow: visible;
   }
 }
 
@@ -3383,6 +3403,9 @@ textarea.field {
             flex: 0 0 calc((100% - 45px) / 4);
     width: calc((100% - 45px) / 4);
     margin-right: 0.9375rem;
+  }
+  .section_calc__left-selected .selected_items .item_color:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -4024,6 +4047,12 @@ textarea.field {
   }
 }
 
+@media (max-width: 540px) {
+  .section_calc__right {
+    display: none;
+  }
+}
+
 .section_calc__right .title {
   font-size: 1.125rem;
   font-weight: 500;
@@ -4131,8 +4160,43 @@ textarea.field {
   width: 27.125rem;
   height: 36.25rem;
   top: 2.5rem;
-  right: 7.625rem;
+  right: 2.625rem;
   z-index: 10;
+}
+
+@media (max-width: 540px) {
+  .section_calc .image-loop {
+    margin-bottom: 1.875rem;
+  }
+}
+
+.section_calc .image-loop .js-image-change-2-1,
+.section_calc .image-loop .js-image-change-2-2 {
+  display: none;
+}
+
+.section_calc .image-loop .image-loop-container.step4-2 .js-image-change-2 {
+  display: none;
+}
+
+.section_calc .image-loop .image-loop-container.step4-2 .js-image-change-2-1 {
+  display: block;
+}
+
+.section_calc .image-loop .image-loop-container.step4-2 .js-image-change-2-2 {
+  display: none;
+}
+
+.section_calc .image-loop .image-loop-container.step5-2 .js-image-change-2 {
+  display: none;
+}
+
+.section_calc .image-loop .image-loop-container.step5-2 .js-image-change-2-1 {
+  display: none;
+}
+
+.section_calc .image-loop .image-loop-container.step5-2 .js-image-change-2-2 {
+  display: block;
 }
 
 .section_calc .image-loop .js-image-zoom__zoomed-image .image-loop-container {
@@ -4146,15 +4210,23 @@ textarea.field {
   height: 5.65625rem !important;
 }
 
+.section_calc .image-loop .js-image-zoom__zoomed-image .image-loop-container.step4-2 .type2_1 {
+  bottom: 9rem;
+  right: -0.875rem;
+  width: 17.5rem !important;
+  height: 5.3125rem !important;
+}
+
 @media (max-width: 1600px) {
   .section_calc .image-loop {
-    right: 0;
+    right: -2.625rem;
   }
 }
 
 @media (max-width: 899px) {
   .section_calc .image-loop {
     position: relative !important;
+    width: 100%;
     height: auto;
     top: auto;
     right: auto;
@@ -4167,11 +4239,24 @@ textarea.field {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .section_calc .image-loop .image-loop-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 540px) {
   .section_calc .image-loop {
-    width: 65%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
   }
   .section_calc .image-loop img {
@@ -4184,6 +4269,15 @@ textarea.field {
   position: absolute;
   bottom: 15.625rem;
   right: 4.5625rem;
+  width: 21.8125rem;
+  height: 9.9375rem;
+}
+
+.section_calc .image-loop .step4-2 .type2_1 {
+  width: 20.5rem;
+  height: 9.3125rem;
+  bottom: 11.9375rem;
+  right: 3.5625rem;
 }
 
 .section_calc .image-loop .js-image-zoom__zoomed-area {
@@ -4193,7 +4287,7 @@ textarea.field {
 .section_calc .image-loop .js-image-zoom__zoomed-image {
   position: absolute !important;
   bottom: 0 !important;
-  left: -13.75rem !important;
+  left: -17rem !important;
   top: auto !important;
   right: auto !important;
   display: block !important;
@@ -4253,6 +4347,10 @@ textarea.field {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
+    -webkit-box-ordinal-group: 11;
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10;
   }
 }
 

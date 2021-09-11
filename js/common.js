@@ -1,36 +1,279 @@
 'use strict';
 
+let calc_color = 'color_default';
+let calc_v = "v2";
+let calc_image_name = "1";
 
+const calc_option = {
+	color_default: 'color_default',
+	color_name: {
+		1: 'color1',
+		2: 'color2',
+		3: 'color3',
+		4: 'color4',
+		5: 'color5',
+		6: 'color6',
+		7: 'color7',
+		8: 'color8',
+		9: 'color9',
+		10: 'color10',
+		11: 'color11',
+		12: 'color12',
+		13: 'color13'
+	},
+	dir_v1: 'v1',
+	dir_v2: 'v2',
+	image_step_name: {
+		step1: '1',
+		step4: '2',
+		step5: {
+			step5_1: '3',
+			step5_2: '4'
+		}
+	}
+}
+
+const calc_step1_checked1 = document.getElementById('calc_step_1_v2');
+const calc_step1_checked2 = document.getElementById('calc_step_1_v1');
+
+const calc_step4_checked1 = document.getElementById('calc_step_4_v1');
+const calc_step4_checked2 = document.getElementById('calc_step_4_v2');
+
+const clac_step5_checked1 = document.getElementById('calc_step_5_1');
+const clac_step5_checked2 = document.getElementById('calc_step_5_2');
 
 const item_color = document.querySelectorAll('.item_color input');
-const item_type = document.querySelectorAll('.js_select_type input');
-const image_loop_change = document.querySelector('.js-image-change');
 
-const image_loop_change_2 = document.querySelector('.js-image-change-2');
-const image_loop_change_3 = document.querySelector('.js-image-change-3');
-const image_loop_change_4 = document.querySelector('.js-image-change-4');
+const image_loop_change = document.querySelector('.js-image-change-1');
 
-const svg_type2_1 = document.querySelector('.type2_1 path');
+const image_loop_container = document.querySelector('.image-loop-container');
 
-item_color.forEach(e => {
+// calc step1
 
-	e.addEventListener('change', function() {
-		const color_1 = e.getAttribute('data-color');
-		svg_type2_1.setAttribute('fill', color_1);
+if(calc_step1_checked1.checked) {
+	calc_color = calc_option.color_default;
+	calc_v = calc_option.dir_v2;
+	calc_image_name = '1';
 
-		ZoomInit();
-	});
+	
+	renameDirImage();
+	ZoomInit();
+}
+
+if(calc_step1_checked2.checked) {
+	calc_color = calc_option.color_default;
+	calc_v = calc_option.dir_v1;
+	calc_image_name = '1';
+
+	
+	renameDirImage();
+	ZoomInit();
+}
+
+calc_step1_checked1.addEventListener('change', function() {
+	calc_v = calc_option.dir_v2;
+
+	renameDirImage();
+	ZoomInit();
 });
 
-item_type.forEach(e => {
-	e.addEventListener('change', function() {
-		const type = e.getAttribute('data-image');
+calc_step1_checked2.addEventListener('change', function() {
+	calc_v = calc_option.dir_v1;
+	
+	renameDirImage();
+	ZoomInit();
+});
 
-		image_loop_change.setAttribute('src', type);
+// end calc step1
 
-		ZoomInit();
-	});
-})
+// calc step3
+const calc_step_3_color1 = document.getElementById('calc_step_3_color1');
+const calc_step_3_color2 = document.getElementById('calc_step_3_color2');
+const calc_step_3_color3 = document.getElementById('calc_step_3_color3');
+const calc_step_3_color4 = document.getElementById('calc_step_3_color4');
+const calc_step_3_color5 = document.getElementById('calc_step_3_color5');
+const calc_step_3_color6 = document.getElementById('calc_step_3_color6');
+const calc_step_3_color7 = document.getElementById('calc_step_3_color7');
+const calc_step_3_color8 = document.getElementById('calc_step_3_color8');
+const calc_step_3_color9 = document.getElementById('calc_step_3_color9');
+const calc_step_3_color10 = document.getElementById('calc_step_3_color10');
+const calc_step_3_color11 = document.getElementById('calc_step_3_color11');
+const calc_step_3_color12 = document.getElementById('calc_step_3_color12');
+const calc_step_3_color13 = document.getElementById('calc_step_3_color13');
+
+calc_step_3_color1.addEventListener('click', function() {
+	calc_color = calc_option.color_name[1];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color2.addEventListener('click', function() {
+	calc_color = calc_option.color_name[2];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color3.addEventListener('click', function() {
+	calc_color = calc_option.color_name[3];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color4.addEventListener('click', function() {
+	calc_color = calc_option.color_name[4];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color5.addEventListener('click', function() {
+	calc_color = calc_option.color_name[5];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color6.addEventListener('click', function() {
+	calc_color = calc_option.color_name[6];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color7.addEventListener('click', function() {
+	calc_color = calc_option.color_name[7];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color8.addEventListener('click', function() {
+	calc_color = calc_option.color_name[8];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color9.addEventListener('click', function() {
+	calc_color = calc_option.color_name[9];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color10.addEventListener('click', function() {
+	calc_color = calc_option.color_name[10];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color11.addEventListener('click', function() {
+	calc_color = calc_option.color_name[11];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color12.addEventListener('click', function() {
+	calc_color = calc_option.color_name[12];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step_3_color13.addEventListener('click', function() {
+	calc_color = calc_option.color_name[13];
+
+	renameDirImage();
+	ZoomInit();
+});
+
+// end calc step3
+
+
+// calc step4
+
+
+calc_step4_checked1.addEventListener('change', function() {
+	// calc_image_name = '1';
+
+	if(clac_step5_checked1.checked) calc_image_name = calc_option.image_step_name.step5.step5_2;
+	else calc_image_name = calc_option.image_step_name.step1;
+
+	renameDirImage();
+	ZoomInit();
+});
+
+calc_step4_checked2.addEventListener('change', function() {
+
+	if(clac_step5_checked1.checked) calc_image_name = calc_option.image_step_name.step5.step5_1;
+	else calc_image_name = calc_option.image_step_name.step4;
+
+	renameDirImage();
+	ZoomInit();
+});
+
+// end calc step4
+
+// calc step5
+
+clac_step5_checked1.addEventListener('change', function() {
+	// calc_image_name = '2';
+
+	// calc_image_name = calc_option.image_step_name.step5.step5_1;
+
+	if(calc_step1_checked1.checked) {
+		calc_v = calc_option.dir_v2;
+	} else {
+		calc_v = calc_option.dir_v1;
+	}
+
+	if(calc_step4_checked1.checked) {
+		if(this.checked) calc_image_name = calc_option.image_step_name.step5.step5_2;
+		else calc_image_name = calc_option.image_step_name.step1;
+	}
+	if(calc_step4_checked2.checked) {
+		if(this.checked) calc_image_name = calc_option.image_step_name.step5.step5_1;
+		else calc_image_name = calc_option.image_step_name.step4;
+	}
+
+	renameDirImage();
+	ZoomInit();
+});
+
+clac_step5_checked2.addEventListener('change', function() {
+	// calc_image_name = '2';
+
+	// calc_image_name = calc_option.image_step_name.step5.step5_1;
+
+	if(calc_step1_checked1.checked) {
+		calc_v = calc_option.dir_v2;
+	} else {
+		calc_v = calc_option.dir_v1;
+	}
+
+
+	if(calc_step4_checked1.checked) {
+		calc_image_name = calc_option.image_step_name.step1;
+	}
+	if(calc_step4_checked2.checked) {
+		calc_image_name = calc_option.image_step_name.step4;
+	}
+
+	renameDirImage();
+	ZoomInit();
+});
+
+// end calc step5
+
+function renameDirImage() {
+	image_loop_change.setAttribute('src', `/img/calc/${calc_color}/${calc_v}/${calc_image_name}.png`);
+}
+
 
 
 // tabs
@@ -141,8 +384,6 @@ if(button_header_burger) {
 if(button_header_call) {
 	button_header_call.addEventListener('click', function(event) {
 		event.preventDefault();
-
-		
 
 		modal_phone.classList.add('active');
 	})
@@ -276,13 +517,17 @@ calc_slider.on('slideChange', function(e) {
 		if(e.activeIndex == 4 ) nav_next.innerHTML = 'Узнать цену';
 		if(e.activeIndex == 5 ) {
 			nav_next.innerHTML = 'Отлично, заказать!';
+			nav_next.parentNode.classList.add('modal_message_active');
 			nav_next.parentNode.querySelector('.icon').classList.add('hide');
+		} else {
+			nav_next.classList.remove('modal_message_active');
 		}
 	} else {
 		nav_text.classList.remove('hide');
 		button_smile.classList.remove('hide');
 
 		nav_next.innerHTML = 'Следующий шаг';
+		
 
 		
 	}
@@ -290,7 +535,17 @@ calc_slider.on('slideChange', function(e) {
 	if(e.activeIndex == 4) {
 		nav_next.parentNode.querySelector('.icon').classList.remove('hide');
 	}
+
+	const modal_message_slider = document.querySelector('.modal_message_active');
+	if(modal_message_slider) {
+		modal_message_slider.addEventListener('click', function() {
+			modal_phone.classList.add('active');
+		});
+	}
+	
 });
+
+
 
 
 
@@ -356,6 +611,42 @@ function ZoomInit() {
 	});
 }
 
+const header_play = document.querySelectorAll('.header__bottom_links .button_play');
+const modal = new tingle.modal({
+	footer: false,
+	stickyFooter: false,
+	closeMethods: ['overlay', 'button', 'escape'],
+	closeLabel: "Close",
+	cssClass: ['custom-class-1', 'custom-class-2'],
+	onOpen: function() {
+		// console.log('modal open');
+	},
+	onClose: function() {
+		const yt_video = document.querySelector('video');
+		yt_video.remove();
+	},
+	beforeClose: function() {
+		return true;
+		return false;
+	}
+});
+
+const modal_video_init = (id, element) => {
+	element.setContent(`<video width="100%" height="100%" autoplay="1" controls><source src="../video.mp4" type="video/mp4"></video>`);
+	element.open();
+}
+
+if(header_play) {
+	header_play.forEach(e => {
+		e.addEventListener('click', function(event) {
+			event.preventDefault();
+
+			const id = this.getAttribute('data-video');
+
+			modal_video_init(id, modal);
+		});
+	});
+}
 
 const breakpoint = window.matchMedia('(min-width: 540px)');
 

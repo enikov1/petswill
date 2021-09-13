@@ -308,6 +308,7 @@ if(tab_button) {
 const button_header_phone = document.getElementById('button_header_phone');
 const button_header_burger = document.getElementById('button_header_burger');
 const button_header_call = document.getElementById('button_header_call');
+const button_calc_manager = document.getElementById('button_calc_manager');
 const button_header_smart_call = document.querySelectorAll('.button_header_smart_call');
 
 const modal_contact = document.getElementById('modal_contact');
@@ -383,6 +384,14 @@ if(button_header_burger) {
 
 if(button_header_call) {
 	button_header_call.addEventListener('click', function(event) {
+		event.preventDefault();
+
+		modal_phone.classList.add('active');
+	})
+}
+
+if(button_calc_manager) {
+	button_calc_manager.addEventListener('click', function(event) {
 		event.preventDefault();
 
 		modal_phone.classList.add('active');
@@ -577,7 +586,6 @@ function ZoomInit() {
 		const image_zoom = e.querySelector('.js-image-zoom__zoomed-image');
 
 		const is_image_zoom_container = image_zoom.querySelector('.image-loop-container');
-		console.log(is_image_zoom_container);
 		if(is_image_zoom_container != null) is_image_zoom_container.remove();
 
 		image_zoom.appendChild(clone);
@@ -611,7 +619,7 @@ function ZoomInit() {
 	});
 }
 
-const header_play = document.querySelectorAll('.header__bottom_links .button_play');
+const header_play = document.querySelectorAll('.button_play');
 const modal = new tingle.modal({
 	footer: false,
 	stickyFooter: false,
@@ -619,7 +627,6 @@ const modal = new tingle.modal({
 	closeLabel: "Close",
 	cssClass: ['custom-class-1', 'custom-class-2'],
 	onOpen: function() {
-		// console.log('modal open');
 	},
 	onClose: function() {
 		const yt_video = document.querySelector('video');

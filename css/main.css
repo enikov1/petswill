@@ -563,6 +563,10 @@ body {
   padding-bottom: 5rem;
 }
 
+.footer__top > .container {
+  position: relative;
+}
+
 @media (max-width: 767px) {
   .footer__top > .container {
     display: -webkit-box;
@@ -593,6 +597,7 @@ body {
 .footer__top .form_questions {
   position: absolute;
   top: -5rem;
+  width: 100%;
 }
 
 @media (max-width: 1340px) {
@@ -4829,6 +4834,7 @@ textarea.field {
 
 .section_calc__right .calc_last_slider .swiper-container .swiper-slide {
   opacity: 0 !important;
+  pointer-events: visible !important;
 }
 
 .section_calc__right .calc_last_slider .swiper-container .swiper-slide-active, .section_calc__right .calc_last_slider .swiper-container .swiper-slide-next {
@@ -6319,6 +6325,16 @@ textarea.field {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1600px) {
+  .sect_product__items .slider-left, .sect_product__items .slider-right {
+    width: 3.75rem;
+    height: 3.75rem;
+    -webkit-transform: translateY(-150px);
+        -ms-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
 }
 
 @media (max-width: 767px) {
@@ -10069,6 +10085,8 @@ textarea.field {
 
 .filter_option__sect-range {
   position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .filter_option__sect-range .button {

@@ -537,55 +537,47 @@ if(number_control) {
 
 		number_control_minus.addEventListener('mousedown', function () {
 
-		timeout = setInterval(() => {
 			let count = parseInt(number_control_input.value) - 1
 
 			count = count < 1 ? 1 : count
 			number_control_input.value = count
-			}, 50)
 		})
 
 		number_control_minus.addEventListener('touchstart', function () {
 
-			timeout = setInterval(() => {
-				let count = parseInt(number_control_input.value) - 1
+			let count = parseInt(number_control_input.value) - 1
 
 				count = count < 1 ? 1 : count
 				number_control_input.value = count
-			}, 20)
 		})
 
-		number_control_minus.addEventListener('mouseup', function () {
-			clearInterval(timeout);
-		})
+		// number_control_minus.addEventListener('mouseup', function () {
+		// 	clearInterval(timeout);
+		// })
 
-		number_control_minus.addEventListener('touchend', function () {
-			clearInterval(timeout);
-		})
+		// number_control_minus.addEventListener('touchend', function () {
+		// 	clearInterval(timeout);
+		// })
 
 		number_control_plus.addEventListener('mousedown', function () {
 
-			timeout = setInterval(() => {
-				let count = parseInt(number_control_input.value) + 1
-				number_control_input.value = count
-			}, 50)
+			let count = parseInt(number_control_input.value) + 1
+			number_control_input.value = count
 		})
 
 		number_control_plus.addEventListener('touchstart', function () {
 
-			timeout = setInterval(() => {
-				let count = parseInt(number_control_input.value) + 1
+			let count = parseInt(number_control_input.value) + 1
 				number_control_input.value = count
-			}, 50)
 		})
 
-		number_control_plus.addEventListener('mouseup', function () {
-			clearInterval(timeout);
-		})
+		// number_control_plus.addEventListener('mouseup', function () {
+		// 	clearInterval(timeout);
+		// })
 
-		number_control_plus.addEventListener('touchend', function () {
-			clearInterval(timeout);
-		})
+		// number_control_plus.addEventListener('touchend', function () {
+		// 	clearInterval(timeout);
+		// })
 
 		number_control_input.addEventListener('input', function () {
 			if (this.value == 0) {
@@ -742,20 +734,23 @@ if(button_top) {
 	
 }
 
-const lightgallery_wrap = document.querySelector('#lightgallery')
+const lightgallery_wrap = document.querySelectorAll('.lightgallery_init')
 
 if(lightgallery_wrap) {
-	lightGallery(lightgallery_wrap, {
-        plugins: [lgZoom],
-        // licenseKey: 'your_license_key',
-        speed: 500,
-		// counter: false,
-		captions: false,
-		download: false,
+	lightgallery_wrap.forEach(e => {
+		lightGallery(e, {
+			plugins: [lgZoom],
+			// licenseKey: 'your_license_key',
+			speed: 500,
+			// counter: false,
+			captions: false,
+			download: false,
 
-		mobileSettings: {
-			showCloseIcon: true,
-		}
+			mobileSettings: {
+				showCloseIcon: true,
+			}
+		})
 	})
+	
 }
 

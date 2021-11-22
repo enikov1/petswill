@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+  </head>
+  <body class="w-catalog">
+    <header class="header header__mini">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top_left">
+            <div class="button_header_smart" id="button_header_burger"><svg class="icon-burger" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 2C0 3.10457 0.895431 4 2 4C3.10457 4 4 3.10457 4 2C4 0.895431 3.10457 0 2 0C0.895431 0 0 0.895431 0 2Z" fill="white"/>
+<path d="M6 14C6 15.1046 6.89543 16 8 16C9.10457 16 10 15.1046 10 14C10 12.8954 9.10457 12 8 12C6.89543 12 6 12.8954 6 14Z" fill="white"/>
+<path d="M2 16C0.895431 16 0 15.1046 0 14C0 12.8954 0.895431 12 2 12C3.10457 12 4 12.8954 4 14C4 15.1046 3.10457 16 2 16Z" fill="white"/>
+<path d="M0 8C0 9.10457 0.895431 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6C0.895431 6 0 6.89543 0 8Z" fill="white"/>
+<path d="M8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10Z" fill="white"/>
+<path d="M14 0C12.8954 0 12 0.895431 12 2C12 3.10457 12.8954 4 14 4C15.1046 4 16 3.10457 16 2C16 0.895431 15.1046 0 14 0Z" fill="white"/>
+<path d="M8 4C6.89543 4 6 3.10457 6 2C6 0.895431 6.89543 0 8 0C9.10457 0 10 0.895431 10 2C10 3.10457 9.10457 4 8 4Z" fill="white"/>
+<path d="M12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6C12.8954 6 12 6.89543 12 8Z" fill="white"/>
+<path d="M14 16C12.8954 16 12 15.1046 12 14C12 12.8954 12.8954 12 14 12C15.1046 12 16 12.8954 16 14C16 15.1046 15.1046 16 14 16Z" fill="white"/>
+</svg>
+<svg class="icon-close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="white"/>
+</svg>
+            </div>
+            <ul>
+              <li><a href="#sect_calc"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 2C0 3.10457 0.895431 4 2 4C3.10457 4 4 3.10457 4 2C4 0.895431 3.10457 0 2 0C0.895431 0 0 0.895431 0 2Z" fill="#219653"/>
+<path d="M6 14C6 15.1046 6.89543 16 8 16C9.10457 16 10 15.1046 10 14C10 12.8954 9.10457 12 8 12C6.89543 12 6 12.8954 6 14Z" fill="#219653"/>
+<path d="M2 16C0.895431 16 0 15.1046 0 14C0 12.8954 0.895431 12 2 12C3.10457 12 4 12.8954 4 14C4 15.1046 3.10457 16 2 16Z" fill="#219653"/>
+<path d="M0 8C0 9.10457 0.895431 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6C0.895431 6 0 6.89543 0 8Z" fill="#219653"/>
+<path d="M8 10C6.89543 10 6 9.10457 6 8C6 6.89543 6.89543 6 8 6C9.10457 6 10 6.89543 10 8C10 9.10457 9.10457 10 8 10Z" fill="#219653"/>
+<path d="M14 0C12.8954 0 12 0.895431 12 2C12 3.10457 12.8954 4 14 4C15.1046 4 16 3.10457 16 2C16 0.895431 15.1046 0 14 0Z" fill="#219653"/>
+<path d="M8 4C6.89543 4 6 3.10457 6 2C6 0.895431 6.89543 0 8 0C9.10457 0 10 0.895431 10 2C10 3.10457 9.10457 4 8 4Z" fill="#219653"/>
+<path d="M12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6C12.8954 6 12 6.89543 12 8Z" fill="#219653"/>
+<path d="M14 16C12.8954 16 12 15.1046 12 14C12 12.8954 12.8954 12 14 12C15.1046 12 16 12.8954 16 14C16 15.1046 15.1046 16 14 16Z" fill="#219653"/>
+</svg><b>Узнать цену</b></a></li>
+              <li><a href="#sect_video">Видеопрезентация</a></li>
+              <li><a href="#sect_review">Отзывы</a></li>
+            </ul>
+            <div class="social__links"><a href="#"><svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.07807 7.31265V13L4.63394 12.9984V7.31103H6.53857L6.901 4.95812H4.63394V3.4321C4.63394 2.78833 4.95138 2.16002 5.96587 2.16002H7V0.158706C7 0.158706 6.06241 0 5.16737 0C3.29956 0 2.07807 1.12559 2.07807 3.16678V4.95975H0V7.31265H2.07807Z"/>
+</svg></a><a href="#"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.02238 0H2.97759C1.33572 0 0 1.33572 0 2.97759V8.02247C0 9.66426 1.33572 11 2.97759 11H8.02247C9.66426 11 11 9.66426 11 8.02247V2.97759C11 1.33572 9.66426 0 8.02238 0V0ZM5.49999 8.50771C3.8415 8.50771 2.49227 7.15848 2.49227 5.49999C2.49227 3.8415 3.8415 2.49227 5.49999 2.49227C7.15848 2.49227 8.50771 3.8415 8.50771 5.49999C8.50771 7.15848 7.15848 8.50771 5.49999 8.50771ZM8.57963 3.20159C8.08952 3.20159 7.69089 2.80295 7.69089 2.31284C7.69089 1.82273 8.08952 1.42401 8.57963 1.42401C9.06975 1.42401 9.46846 1.82273 9.46846 2.31284C9.46846 2.80295 9.06975 3.20159 8.57963 3.20159Z"/>
+<path d="M5.54004 3.54001C4.43729 3.54001 3.54004 4.43718 3.54004 5.54001C3.54004 6.64276 4.43729 7.54001 5.54004 7.54001C6.64286 7.54001 7.54004 6.64276 7.54004 5.54001C7.54004 4.43718 6.64286 3.54001 5.54004 3.54001Z"/>
+<path d="M8.57957 2.06897C8.44513 2.06897 8.33569 2.17841 8.33569 2.31285C8.33569 2.4473 8.44513 2.55673 8.57957 2.55673C8.7141 2.55673 8.82354 2.44738 8.82354 2.31285C8.82354 2.17832 8.7141 2.06897 8.57957 2.06897Z"/>
+</svg></a><a href="#">
+                 <svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7355 1.43094C12.5861 0.873637 12.1477 0.433898 11.5911 0.283854C10.5739 0.00455158 6.5045 4.93423e-06 6.5045 4.93423e-06C6.5045 4.93423e-06 2.43578 -0.00454198 1.41795 0.262419C0.872334 0.411164 0.421553 0.860646 0.270859 1.4173C0.00259923 2.43448 9.51674e-07 4.54419 9.51674e-07 4.54419C9.51674e-07 4.54419 -0.0025972 6.66429 0.263714 7.67108C0.413109 8.22773 0.851549 8.66747 1.40885 8.81752C2.43643 9.09682 6.49476 9.10137 6.49476 9.10137C6.49476 9.10137 10.5641 9.10591 11.5813 8.8396C12.1373 8.69021 12.5777 8.25112 12.729 7.69446C12.998 6.67793 12.9999 4.56887 12.9999 4.56887C12.9999 4.56887 13.0129 2.44812 12.7355 1.43094ZM5.20282 6.49866L5.20607 2.60141L8.58823 4.55328L5.20282 6.49866Z"/>
+</svg></a></div>
+          </div>
+          <div class="header__top_center"><a class="logo" href="#"><img src="./img/logo.png" alt="logo"></a></div>
+          <div class="header__top_right"><a class="block_text_right" href="mailto:admin@petswill.ru">
+              <div class="text"><span>Напишите нам</span><b>admin@petswill.ru</b></div>
+              <div class="image"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.13237C0 6.42984 0.368598 5.77883 0.971008 5.41738L8.97101 0.617381C9.60437 0.237362 10.3956 0.237362 11.029 0.617381L19.029 5.41738C19.6314 5.77883 20 6.42984 20 7.13237V18C20 19.1046 19.1046 20 18 20H2C0.895431 20 0 19.1046 0 18V7.13237ZM18 7.8685V18H2V7.86851L10 13.2018L18 7.8685ZM16.6835 6.34247L10 2.33237L3.31649 6.34247L10 10.7981L16.6835 6.34247Z"/>
+</svg>
+              </div></a><a class="block_text_right" href="tel:73422251229">
+              <div class="text"><span>Есть вопросы? Звоните</span><b>+7 (342) 225-12-29</b></div>
+              <div class="image"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.7068 10.293C15.3158 9.90201 14.6838 9.90201 14.2928 10.293L12.6988 11.887C11.9598 11.667 10.5808 11.167 9.70685 10.293C8.83285 9.41901 8.33285 8.04001 8.11285 7.30101L9.70685 5.70701C10.0978 5.31601 10.0978 4.68401 9.70685 4.29301L5.70685 0.293006C5.31585 -0.0979941 4.68385 -0.0979941 4.29285 0.293006L1.58085 3.00501C1.20085 3.38501 0.986845 3.90701 0.994845 4.44001C1.01785 5.86401 1.39485 10.81 5.29285 14.708C9.19085 18.606 14.1368 18.982 15.5618 19.006C15.5668 19.006 15.5848 19.006 15.5898 19.006C16.1178 19.006 16.6168 18.798 16.9948 18.42L19.7068 15.708C20.0978 15.317 20.0978 14.685 19.7068 14.294L15.7068 10.293ZM15.5798 17.005C14.3318 16.984 10.0618 16.649 6.70685 13.293C3.34085 9.92701 3.01485 5.64201 2.99485 4.41901L4.99985 2.41401L7.58585 5.00001L6.29285 6.29301C6.05385 6.53101 5.95185 6.87501 6.02085 7.20501C6.04485 7.32001 6.63185 10.047 8.29185 11.707C9.95185 13.367 12.6788 13.954 12.7938 13.978C13.1268 14.049 13.4678 13.946 13.7058 13.707L14.9998 12.414L17.5858 15L15.5798 17.005Z"/>
+</svg>
+              </div></a>
+            <button class="button_green" type="button" id="button_header_call"><span>Перезвоните мне</span></button>
+            <button class="button_header_smart" type="button" id="button_header_phone"><svg class="icon-phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.707 10.293C15.316 9.90201 14.684 9.90201 14.293 10.293L12.699 11.887C11.96 11.667 10.581 11.167 9.707 10.293C8.833 9.41901 8.333 8.04001 8.113 7.30101L9.707 5.70701C10.098 5.31601 10.098 4.68401 9.707 4.29301L5.707 0.293006C5.316 -0.0979941 4.684 -0.0979941 4.293 0.293006L1.581 3.00501C1.201 3.38501 0.986998 3.90701 0.994998 4.44001C1.018 5.86401 1.395 10.81 5.293 14.708C9.191 18.606 14.137 18.982 15.562 19.006C15.567 19.006 15.585 19.006 15.59 19.006C16.118 19.006 16.617 18.798 16.995 18.42L19.707 15.708C20.098 15.317 20.098 14.685 19.707 14.294L15.707 10.293ZM15.58 17.005C14.332 16.984 10.062 16.649 6.707 13.293C3.341 9.92701 3.015 5.64201 2.995 4.41901L5 2.41401L7.586 5.00001L6.293 6.29301C6.054 6.53101 5.952 6.87501 6.021 7.20501C6.045 7.32001 6.632 10.047 8.292 11.707C9.952 13.367 12.679 13.954 12.794 13.978C13.127 14.049 13.468 13.946 13.706 13.707L15 12.414L17.586 15L15.58 17.005Z" fill="white"/>
+</svg>
+<svg class="icon-close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="white"/>
+</svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page_catalog">
+      <div class="container">
+        <div class="page_catalog__top">
+          <div class="breadcrumbs"><a href="#">Главная</a><span>Результаты поиска</span></div>
+          <h1 class="title-h1">Каталог товаров в наличии</h1>
+        </div>
+        <div class="page_catalog__left">
+          <div class="aside_blog">
+            <div class="aside_blog__title"><span class="desktop">Категории</span>
+              <button class="mobile js--aside-active" type="button"><span>Полный каталог</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 15L9.29289 15.7071L10 16.4142L10.7071 15.7071L10 15ZM4.29289 10.7071L9.29289 15.7071L10.7071 14.2929L5.70711 9.29289L4.29289 10.7071ZM10.7071 15.7071L15.7071 10.7071L14.2929 9.2929L9.29289 14.2929L10.7071 15.7071Z" fill="white"/>
+<path d="M10 10L9.29289 10.7071L10 11.4142L10.7071 10.7071L10 10ZM4.29289 5.70711L9.29289 10.7071L10.7071 9.29289L5.70711 4.29289L4.29289 5.70711ZM10.7071 10.7071L15.7071 5.70711L14.2929 4.2929L9.29289 9.29289L10.7071 10.7071Z" fill="white"/>
+</svg>
+              </button>
+            </div>
+            <ul class="aside_blog__list">
+              <li><a class="active" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 12L18.7071 12.7071L19.4142 12L18.7071 11.2929L18 12ZM12.7071 18.7071L18.7071 12.7071L17.2929 11.2929L11.2929 17.2929L12.7071 18.7071ZM18.7071 11.2929L12.7071 5.29292L11.2929 6.70714L17.2929 12.7071L18.7071 11.2929Z" fill="white"/>
+<path d="M12 12L12.7071 12.7071L13.4142 12L12.7071 11.2929L12 12ZM6.70711 18.7071L12.7071 12.7071L11.2929 11.2929L5.29289 17.2929L6.70711 18.7071ZM12.7071 11.2929L6.70711 5.29292L5.29289 6.70714L11.2929 12.7071L12.7071 11.2929Z" fill="white"/>
+</svg><span>Столы с гидравликой</span></a></li>
+              <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 12L18.7071 12.7071L19.4142 12L18.7071 11.2929L18 12ZM12.7071 18.7071L18.7071 12.7071L17.2929 11.2929L11.2929 17.2929L12.7071 18.7071ZM18.7071 11.2929L12.7071 5.29292L11.2929 6.70714L17.2929 12.7071L18.7071 11.2929Z" fill="white"/>
+<path d="M12 12L12.7071 12.7071L13.4142 12L12.7071 11.2929L12 12ZM6.70711 18.7071L12.7071 12.7071L11.2929 11.2929L5.29289 17.2929L6.70711 18.7071ZM12.7071 11.2929L6.70711 5.29292L5.29289 6.70714L11.2929 12.7071L12.7071 11.2929Z" fill="white"/>
+</svg><span>Столы с электроподъёмом</span></a></li>
+              <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 12L18.7071 12.7071L19.4142 12L18.7071 11.2929L18 12ZM12.7071 18.7071L18.7071 12.7071L17.2929 11.2929L11.2929 17.2929L12.7071 18.7071ZM18.7071 11.2929L12.7071 5.29292L11.2929 6.70714L17.2929 12.7071L18.7071 11.2929Z" fill="white"/>
+<path d="M12 12L12.7071 12.7071L13.4142 12L12.7071 11.2929L12 12ZM6.70711 18.7071L12.7071 12.7071L11.2929 11.2929L5.29289 17.2929L6.70711 18.7071ZM12.7071 11.2929L6.70711 5.29292L5.29289 6.70714L11.2929 12.7071L12.7071 11.2929Z" fill="white"/>
+</svg><span>Столы на газлифте </span></a></li>
+              <li><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 12L18.7071 12.7071L19.4142 12L18.7071 11.2929L18 12ZM12.7071 18.7071L18.7071 12.7071L17.2929 11.2929L11.2929 17.2929L12.7071 18.7071ZM18.7071 11.2929L12.7071 5.29292L11.2929 6.70714L17.2929 12.7071L18.7071 11.2929Z" fill="white"/>
+<path d="M12 12L12.7071 12.7071L13.4142 12L12.7071 11.2929L12 12ZM6.70711 18.7071L12.7071 12.7071L11.2929 11.2929L5.29289 17.2929L6.70711 18.7071ZM12.7071 11.2929L6.70711 5.29292L5.29289 6.70714L11.2929 12.7071L12.7071 11.2929Z" fill="white"/>
+</svg><span>простые Столы </span></a></li>
+            </ul>
+          </div>
+          <div class="filter_option">
+            <div class="filter_option__title"><span>Подбор по параметрам</span>
+              <button class="filter_option__title-close" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#2E3A59"/>
+</svg>
+              </button>
+            </div>
+            <div class="filter_option__sect first active">
+              <label class="field-checked">
+                <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Распродажа</span>
+              </label>
+            </div>
+            <div class="filter_option__sect active">
+              <button class="filter_option__sect-title" type="button"><span>Цена</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.98956 9.7019L12 15.7123L18.0104 9.7019L16.5962 8.28769L12 12.8839L7.40378 8.28769L5.98956 9.7019Z" fill="#219653"/>
+</svg>
+              </button>
+              <div class="filter_option__sect-toggle js--range-box">
+                <div class="filter_option__sect-fields">
+                  <div class="filter_option__sect-fields__item">
+                    <label>от</label>
+                    <input class="input js--range-f-first" type="text">
+                  </div>
+                  <div class="filter_option__sect-fields__item">
+                    <label>от</label>
+                    <input class="input js--range-f-last" type="text">
+                  </div>
+                </div>
+                <div class="filter_option__sect-range js--range-slider">
+                  <button class="button" type="button"><svg width="90" height="23" viewBox="0 0 90 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 3C0 1.34315 1.34315 0 3 0H82.2512C83.2985 0 84.2679 0.542208 84.8028 1.44266C86.4776 4.26222 90 10.3312 90 11.5C90 12.6688 86.4776 18.7378 84.8028 21.5573C84.2679 22.4578 83.2985 23 82.2512 23H3C1.34315 23 0 21.6569 0 20V3Z" fill="#219653"/>
+</svg><span>Показать</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="filter_option__sect">
+              <button class="filter_option__sect-title" type="button"><span>Вид столешницы</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.98956 9.7019L12 15.7123L18.0104 9.7019L16.5962 8.28769L12 12.8839L7.40378 8.28769L5.98956 9.7019Z" fill="#219653"/>
+</svg>
+              </button>
+              <div class="filter_option__sect-toggle">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Косточка</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Прямоугольный</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter_option__sect">
+              <button class="filter_option__sect-title" type="button"><span>Размер столешницы</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.98956 9.7019L12 15.7123L18.0104 9.7019L16.5962 8.28769L12 12.8839L7.40378 8.28769L5.98956 9.7019Z" fill="#219653"/>
+</svg>
+              </button>
+              <div class="filter_option__sect-toggle">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Regular - 101x66см</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Mini - 91x61см</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter_option__sect">
+              <button class="filter_option__sect-title" type="button"><span>Цвет столешницы</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.98956 9.7019L12 15.7123L18.0104 9.7019L16.5962 8.28769L12 12.8839L7.40378 8.28769L5.98956 9.7019Z" fill="#219653"/>
+</svg>
+              </button>
+              <div class="filter_option__sect-toggle">
+                <div class="colors-selected">
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/1.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/2.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/3.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/4.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/5.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/6.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/7.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/8.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/9.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/10.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/11.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/12.png" alt="image">
+                  </label>
+                  <label class="color-checked">
+                    <input type="checkbox"><img src="img/color-checked/13.png" alt="image">
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter_option__sect">
+              <button class="filter_option__sect-title" type="button"><span>Тип держателя</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.98956 9.7019L12 15.7123L18.0104 9.7019L16.5962 8.28769L12 12.8839L7.40378 8.28769L5.98956 9.7019Z" fill="#219653"/>
+</svg>
+              </button>
+              <div class="filter_option__sect-toggle">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г - образная</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">П - образная</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Без держателя</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter_option__sect">
+              <button class="filter_option__sect-title" type="button"><span>Вам нужен органайзер?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.98956 9.7019L12 15.7123L18.0104 9.7019L16.5962 8.28769L12 12.8839L7.40378 8.28769L5.98956 9.7019Z" fill="#219653"/>
+</svg>
+              </button>
+              <div class="filter_option__sect-toggle">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Да</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Нет</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter_option__buttons">
+              <button class="filter_option__buttons-submit" type="submit">Показать</button>
+              <button class="filter_option__buttons-reset" type="submit">Сбросить</button>
+            </div>
+          </div>
+        </div>
+        <div class="page_catalog__right">
+          <button class="filter_mobile_button" type="button"><span>Подбор по параметрам</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.91663 7.91658C9.23788 7.91658 10.3539 7.03804 10.7125 5.83325H18.3333V4.16659H10.7125C10.3539 2.9618 9.23788 2.08325 7.91663 2.08325C6.3058 2.08325 4.99996 3.38909 4.99996 4.99992C4.99996 6.61075 6.3058 7.91658 7.91663 7.91658ZM9.16663 4.99992C9.16663 5.69027 8.60698 6.24992 7.91663 6.24992C7.22627 6.24992 6.66663 5.69027 6.66663 4.99992C6.66663 4.30956 7.22627 3.74992 7.91663 3.74992C8.60698 3.74992 9.16663 4.30956 9.16663 4.99992Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.75 12.9166C15.0712 12.9166 16.1873 12.038 16.5458 10.8333H18.3333V9.16658H16.5458C16.1873 7.9618 15.0712 7.08325 13.75 7.08325C12.1391 7.08325 10.8333 8.38909 10.8333 9.99992C10.8333 11.6107 12.1391 12.9166 13.75 12.9166ZM13.75 11.2499C14.4403 11.2499 15 10.6903 15 9.99992C15 9.30956 14.4403 8.74992 13.75 8.74992C13.0596 8.74992 12.5 9.30956 12.5 9.99992C12.5 10.6903 13.0596 11.2499 13.75 11.2499Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.24996 17.9166C7.86079 17.9166 9.16663 16.6107 9.16663 14.9999C9.16663 13.3891 7.86079 12.0833 6.24996 12.0833C4.9287 12.0833 3.81264 12.9618 3.45408 14.1666H1.66663V15.8333H3.45408C3.81264 17.038 4.9287 17.9166 6.24996 17.9166ZM6.24996 16.2499C6.94032 16.2499 7.49996 15.6903 7.49996 14.9999C7.49996 14.3096 6.94032 13.7499 6.24996 13.7499C5.5596 13.7499 4.99996 14.3096 4.99996 14.9999C4.99996 15.6903 5.5596 16.2499 6.24996 16.2499Z" fill="#333333"/>
+<path d="M9.99996 14.1666H18.3333V15.8333H9.99996V14.1666Z" fill="#333333"/>
+<path d="M9.99996 9.16658H1.66663V10.8333H9.99996V9.16658Z" fill="#333333"/>
+<path d="M4.16663 4.16659H1.66663V5.83325H4.16663V4.16659Z" fill="#333333"/>
+</svg>
+          </button>
+          <div class="filter_bar">
+            <div class="filter_bar__text"><span>Сортировать:</span></div>
+            <div class="filter_bar__button">
+              <button class="filter_bar__button-item active" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 7H19" stroke="#219653" stroke-width="2" stroke-linecap="round"/>
+<path d="M5 12H15" stroke="#219653" stroke-width="2" stroke-linecap="round"/>
+<path d="M5 17H11" stroke="#219653" stroke-width="2" stroke-linecap="round"/>
+</svg><span>По цене</span>
+              </button>
+              <button class="filter_bar__button-item" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 7H19" stroke="#219653" stroke-width="2" stroke-linecap="round"/>
+<path d="M5 12H15" stroke="#219653" stroke-width="2" stroke-linecap="round"/>
+<path d="M5 17H11" stroke="#219653" stroke-width="2" stroke-linecap="round"/>
+</svg><span>По популярности</span>
+              </button>
+            </div>
+            <div class="filter_bar__select"><span class="filter_bar__select-name">Выводить по</span><b class="filter_bar__select-selected">30</b><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.74005 9.29766L11.5 15.0576L17.26 9.29766L15.9047 7.94237L11.5 12.3471L7.09534 7.94237L5.74005 9.29766Z" fill="#219653"/>
+</svg>
+              <div class="filter_bar__select-list">
+                <button class="filter_bar__select-list__item" type="button"><span>Выводить по</span><b>20</b></button>
+                <button class="filter_bar__select-list__item" type="button"><span>Выводить по</span><b>10</b></button>
+              </div>
+            </div>
+          </div>
+          <div class="page_catalog__right-items">
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span></div>
+              <div class="item_product__image"><img src="img/sect_product/1.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-orange">Осталось всего 2</span></div>
+              <div class="item_product__image"><img src="img/sect_product/2.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span><span class="item_product__abs-orange">Последний стол</span></div>
+              <div class="item_product__image"><img src="img/sect_product/3.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span></div>
+              <div class="item_product__image"><img src="img/sect_product/1.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-orange">Осталось всего 2</span></div>
+              <div class="item_product__image"><img src="img/sect_product/2.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span><span class="item_product__abs-orange">Последний стол</span></div>
+              <div class="item_product__image"><img src="img/sect_product/3.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="block_abs">
+              <div class="block_green_overlay"><b class="count">-10%</b>
+                <div class="block_green_overlay-col"><b class="title">Получите свою скидку</b>
+                  <p class="descr">Мы с удовольствием дадим Вам скидку -10% на уже готовые столы, которые у нас в наличии</p>
+                </div><img class="lazyload" data-src="./img/logo_two.png" src="#" alt="image">
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span></div>
+              <div class="item_product__image"><img src="img/sect_product/1.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-orange">Осталось всего 2</span></div>
+              <div class="item_product__image"><img src="img/sect_product/2.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span><span class="item_product__abs-orange">Последний стол</span></div>
+              <div class="item_product__image"><img src="img/sect_product/3.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span></div>
+              <div class="item_product__image"><img src="img/sect_product/1.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-orange">Осталось всего 2</span></div>
+              <div class="item_product__image"><img src="img/sect_product/2.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+            <div class="item_product">
+              <div class="item_product__abs"><span class="item_product__abs-green">Товар дня</span><span class="item_product__abs-orange">Последний стол</span></div>
+              <div class="item_product__image"><img src="img/sect_product/3.png" alt="image"></div>
+              <h4 class="item_product__title">Профессиональные столы для груминга премиум класса</h4>
+              <ul class="item_product__list">
+                <li>Размер: <span>101x66см</span></li>
+                <li>Форма столешницы: <span>Косточка</span></li>
+              </ul>
+              <div class="item_product__checked">
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+                <label class="field-checked">
+                  <input type="checkbox"><span class="field-checked__check"><svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.993102 3.5286L4.29293 6.82843L3.35012 7.77124L0.050293 4.47141L0.993102 3.5286Z" fill="white"/>
+<path d="M3.35012 5.88561L9.00698 0.22876L9.94978 1.17157L4.29293 6.82843L3.35012 5.88561Z" fill="white"/>
+</svg></span><span class="field-checked__text">Г-образный держатель</span>
+                </label>
+              </div>
+              <div class="item_product__price"><b>41 108 руб.</b><span>49 999 руб.</span></div>
+              <div class="item_product__control">
+                <div class="number-counter">
+                  <button class="number-counter__button minus js--button-minus" type="button">-</button>
+                  <input class="number-counter__field js--button-input" type="number" value="1">
+                  <button class="number-counter__button plus js--button-plus" type="button">+</button>
+                </div><a class="button" href="#"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.9583 9.83329C13.5833 9.83329 14.1333 9.49163 14.4166 8.97496L17.3999 3.56663C17.7083 3.01663 17.3083 2.33329 16.6749 2.33329H4.34159L3.55825 0.666626H0.833252V2.33329H2.49992L5.49992 8.65829L4.37492 10.6916C3.76659 11.8083 4.56659 13.1666 5.83325 13.1666H15.8333V11.5H5.83325L6.74992 9.83329H12.9583ZM5.13325 3.99996H15.2583L12.9583 8.16663H7.10825L5.13325 3.99996ZM5.83325 14C4.91658 14 4.17492 14.75 4.17492 15.6666C4.17492 16.5833 4.91658 17.3333 5.83325 17.3333C6.74992 17.3333 7.49992 16.5833 7.49992 15.6666C7.49992 14.75 6.74992 14 5.83325 14ZM14.1666 14C13.2499 14 12.5083 14.75 12.5083 15.6666C12.5083 16.5833 13.2499 17.3333 14.1666 17.3333C15.0833 17.3333 15.8333 16.5833 15.8333 15.6666C15.8333 14.75 15.0833 14 14.1666 14Z" fill="white"/>
+</svg><span>Хочу такой! </span></a>
+              </div>
+            </div>
+          </div>
+          <div class="page_catalog__right-pages">
+            <div class="page_nav"><a class="page_nav__item active" href="#">1</a><a class="page_nav__item" href="#">2</a><a class="page_nav__item" href="#">3</a><a class="page_nav__item" href="#">4</a><span class="page_nav__sep"><svg width="12" height="4" viewBox="0 0 12 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.99999 0.666748C1.26666 0.666748 0.666656 1.26675 0.666656 2.00008C0.666656 2.73341 1.26666 3.33341 1.99999 3.33341C2.73332 3.33341 3.33332 2.73341 3.33332 2.00008C3.33332 1.26675 2.73332 0.666748 1.99999 0.666748Z" fill="#828282"/>
+<path d="M9.99999 0.666748C9.26666 0.666748 8.66666 1.26675 8.66666 2.00008C8.66666 2.73341 9.26666 3.33341 9.99999 3.33341C10.7333 3.33341 11.3333 2.73341 11.3333 2.00008C11.3333 1.26675 10.7333 0.666748 9.99999 0.666748Z" fill="#828282"/>
+<path d="M4.66666 2.00008C4.66666 1.26675 5.26666 0.666748 5.99999 0.666748C6.73332 0.666748 7.33332 1.26675 7.33332 2.00008C7.33332 2.73341 6.73332 3.33341 5.99999 3.33341C5.26666 3.33341 4.66666 2.73341 4.66666 2.00008Z" fill="#828282"/>
+</svg></span><a class="page_nav__item" href="#">32</a><a class="page_nav__next" href="#"><span>Следующая</span><svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.29767 12.26L8.05765 6.50004L2.29767 0.740062L0.942383 2.09535L5.34707 6.50004L0.942383 10.9047L2.29767 12.26Z" fill="#619B3F"/>
+</svg></a></div>
+            <div class="filter_bar__select"><span class="filter_bar__select-name">Выводить по</span><b class="filter_bar__select-selected">30</b><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.74005 9.29766L11.5 15.0576L17.26 9.29766L15.9047 7.94237L11.5 12.3471L7.09534 7.94237L5.74005 9.29766Z" fill="#219653"/>
+</svg>
+              <div class="filter_bar__select-list">
+                <button class="filter_bar__select-list__item" type="button"><span>Выводить по</span><b>20</b></button>
+                <button class="filter_bar__select-list__item" type="button"><span>Выводить по</span><b>10</b></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="sect_video" id="sect_video">
+      <div class="container">
+        <div class="sect_video__left">
+          <h2 class="title-36">Видео о наших столах</h2>
+          <p>Равным образом консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками.</p>
+          <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют определения . </p>
+          <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют. </p><a class="link desktop" href="#"><img class="lazyload" data-src="./img/svg/youtube.svg" src="#" alt="image"><span>Присоединяйтесь к нам на Youtube</span></a>
+        </div>
+        <div class="sect_video__center">
+          <button class="play button_play" type="button"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="30" cy="30" r="29" stroke="#0F5A2F" stroke-width="2"/>
+<path d="M28.0738 23.206C26.7423 22.3587 25 23.3152 25 24.8933V35.1067C25 36.6848 26.7423 37.6413 28.0738 36.794L36.0985 31.6873C37.3335 30.9014 37.3335 29.0986 36.0985 28.3127L28.0738 23.206Z" fill="#0F5A2F"/>
+</svg><span>Видео о наших столах</span>
+          </button><img class="lazyload" data-src="./img/video_bg.jpg" src="#" alt="image">
+        </div>
+        <div class="sect_video__right"><a class="link smart" href="#"><img class="lazyload" data-src="./img/svg/youtube.svg" src="#" alt="image"><span>Присоединяйтесь к нам на Youtube</span></a>
+          <div class="item">
+            <div class="item__left"><img class="lazyload" data-src="./img/svg/pav.svg" src="#" alt="image"></div>
+            <div class="item__right"><b>Качество</b>
+              <p>Очень качественное покрытие, которое не царапается и не развалится со временем</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__left"><img class="lazyload" data-src="./img/svg/icon-bar.svg" src="#" alt="image"></div>
+            <div class="item__right"><b>Высокая грузоподъемность</b>
+              <p>Подъемный механизм позволит Вам работать с самыми увесистыми клиентами</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__left"><img class="lazyload" data-src="./img/svg/icon-pets.svg" src="#" alt="image"></div>
+            <div class="item__right"><b>Устойчивость</b>
+              <p>Можете быть уверены, столик выдержит даже самого неспокойного клиента</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__left"><img class="lazyload" data-src="./img/svg/icon-bathing.svg" src="#" alt="image"></div>
+            <div class="item__right"><b>Абсолютное отсутствие люфта</b>
+              <p>Мы идеально отточили технологию сборки стола.</p>
+            </div>
+          </div>
+        </div>
+        <div class="form_questions">
+          <form class="js_form" action="/">
+            <div class="form_questions__title">
+              <div class="title">Остались вопросы?</div>
+              <p>Мы свяжемся с Вами в ближайшее время</p>
+            </div>
+            <div class="form_questions__fields">
+              <div class="field-set">
+                <input class="field" type="text" placeholder="Иванов Иван Иванович" required>
+              </div>
+              <div class="field-set">
+                <input class="field js_phone_mask" type="text" placeholder="8 800 333 33 33" required>
+              </div>
+              <label class="field-checked">
+                <input type="checkbox" name="check"><span class="check"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.99989 12.1906C7.83798 12.1906 8.5237 11.5049 8.5237 10.6668C8.5237 9.82866 7.83798 9.14294 6.99989 9.14294C6.16179 9.14294 5.47607 9.82866 5.47607 10.6668C5.47607 11.5049 6.16179 12.1906 6.99989 12.1906Z"/>
+<path d="M11.5715 5.33334H10.8096V3.80953C10.8096 1.70666 9.10288 0 7.00004 0C4.89719 0 3.1905 1.70666 3.1905 3.80953V5.33334H2.4286C1.5905 5.33334 0.904785 6.01906 0.904785 6.85716V14.4762C0.904785 15.3143 1.5905 16 2.4286 16H11.5714C12.4095 16 13.0953 15.3143 13.0953 14.4762V6.85716C13.0953 6.01906 12.4096 5.33334 11.5715 5.33334ZM4.63813 3.80953C4.63813 2.50669 5.69719 1.44763 7.00004 1.44763C8.30288 1.44763 9.36194 2.50669 9.36194 3.80953V5.33334H4.63813V3.80953ZM11.5715 14.4762H2.4286V6.85712H11.5714V14.4762H11.5715Z"/>
+</svg></span><span class="text">Я даю согласие на обработку моих персональных данных</span>
+              </label>
+              <button class="button_green" type="submit"><span>Перезвоните мне</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="sect_colors">
+      <div class="container">
+        <div class="sect_colors__left">
+          <div class="title-box">
+            <h2 class="title-36">Уникальное антискользящее <span>покрытие</span></h2>
+            <div class="slider-nav slider-nav-colors">
+              <button class="slider-prev" type="button"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.2998 1.28596L6.35699 0.343155L0.700134 6.00001L6.35699 11.6569L7.2998 10.7141L2.58575 6.00001L7.2998 1.28596Z" fill="#27B985"/>
+</svg>
+              </button>
+              <button class="slider-next" type="button"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.700142 10.714L1.64295 11.6568L7.29981 5.99999L1.64295 0.343134L0.700141 1.28594L5.41419 5.99999L0.700142 10.714Z" fill="#27B985"/>
+</svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper-container" id="slider_colors">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item__count">1</div>
+                  <div class="item__text"><b>Супер антискользящее</b>
+                    <p>Даже самый капризный клиент<br> будет стоять как вкопанный<br> только за счет антискольжения.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item__count">2</div>
+                  <div class="item__text"><b>Износостойкое</b>
+                    <p>Очень качественное покрытие, которое не царапается и не развалится со временем</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item__count">3</div>
+                  <div class="item__text"><b>Не оставляет следов от царапин </b>
+                    <p>Очень качественное покрытие, которое не царапается и не развалится со временем</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item__count">4</div>
+                  <div class="item__text"><b>Не выцветает </b>
+                    <p>Покрытие, которое не<br> выцветает с течением времени<br> и интенсивной эксплуатации</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item__count">5</div>
+                  <div class="item__text"><b>Не разрушается от антисептиков</b>
+                    <p>Покрытие, которое не<br> выцветает от обработки<br> антисептиком и с течением<br> времени в эксплуатации</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="item">
+                  <div class="item__count">6</div>
+                  <div class="item__text"><b>Изготовлено точно под столешницу</b>
+                    <p>Покрытие, которое не<br> выцветает от обработки<br> антисептиком и с течением<br> времени в эксплуатации</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sect_colors__right">
+          <div class="title">
+             <svg width="149" height="91" viewBox="0 0 149 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.19359 90.5913C6.5202 91.0367 7.146 91.133 7.59136 90.8064L14.849 85.4841C15.2944 85.1575 15.3907 84.5317 15.064 84.0863C14.7374 83.641 14.1116 83.5447 13.6663 83.8713L7.21504 88.6022L2.48413 82.151C2.15753 81.7056 1.53173 81.6093 1.08636 81.9359C0.640998 82.2625 0.544721 82.8883 0.871322 83.3337L6.19359 90.5913ZM148.135 2.00909C85.2997 -6.53648 49.7032 15.3404 29.8525 39.49C19.9499 51.5371 13.9941 64.1135 10.5135 73.6735C8.77254 78.4551 7.64896 82.4872 6.95981 85.3287C6.6152 86.7496 6.37909 87.8734 6.22869 88.6448C6.15348 89.0305 6.09969 89.3282 6.06446 89.531C6.04685 89.6324 6.03388 89.7101 6.02519 89.7632C6.02085 89.7898 6.01758 89.8102 6.01533 89.8243C6.01421 89.8314 6.01334 89.8369 6.01273 89.8409C6.01242 89.8428 6.01214 89.8446 6.01199 89.8456C6.01178 89.8469 6.01163 89.8479 7 90C7.98837 90.152 7.98834 90.1522 7.98838 90.152C7.98847 90.1514 7.98856 90.1508 7.98875 90.1496C7.98912 90.1472 7.98974 90.1433 7.99062 90.1378C7.99237 90.1267 7.99513 90.1095 7.99895 90.0861C8.0066 90.0394 8.01849 89.9681 8.03496 89.8733C8.06791 89.6836 8.11923 89.3994 8.19172 89.0275C8.33673 88.2838 8.56644 87.1898 8.90347 85.8001C9.5776 83.0205 10.6806 79.0605 12.3928 74.3577C15.8184 64.9489 21.6751 52.5878 31.3975 40.76C50.7968 17.1595 85.7003 -4.46358 147.865 3.99085L148.135 2.00909Z" fill="#4F4F4F"/>
+</svg><span class="text">Можно выбрать <span>цвет покрытия</span>, который подойдёт под цвет салона</span>
+          </div>
+          <div class="flex items-center">
+            <div class="colors"><img class="lazyload" data-src="./img/colors/1.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/2.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/3.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/4.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/5.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/6.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/7.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/8.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/9.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/10.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/11.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/12.png" src="#" alt="image"><img class="lazyload" data-src="./img/colors/13.png" src="#" alt="image"></div>
+            <div class="image"><img class="lazyload" src="#" data-src="./img/sect_colors_bg.png" alt="image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect_advantage">
+      <div class="container">
+        <div class="title-box">
+          <div class="left">
+            <h3 class="title-36">Наши столы <span>уникальны</span></h3>
+            <p>Это все голишь часть их преимуществ</p>
+          </div>
+          <div class="right">
+            <div class="slider-nav slider-nav-advantage">
+              <button class="slider-prev" type="button"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.2998 1.28596L6.35699 0.343155L0.700134 6.00001L6.35699 11.6569L7.2998 10.7141L2.58575 6.00001L7.2998 1.28596Z" fill="#27B985"/>
+</svg>
+              </button>
+              <button class="slider-next" type="button"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.700142 10.714L1.64295 11.6568L7.29981 5.99999L1.64295 0.343134L0.700141 1.28594L5.41419 5.99999L0.700142 10.714Z" fill="#27B985"/>
+</svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container" id="slider_advantage">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage1.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Сохранение здоровья спины</b>
+                  <p>За счет амплитуды подъема, Вы снимите нагрузку со спины и будете чувствовать себя полными сил </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage2.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Много цветов покрытия</b>
+                  <p>Такой ассортимент цветов только у нас. Можно подобрать цвет столешницы под любой стиль зоосалона.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage3.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Мощное антискольжение</b>
+                  <p>Самый капризный клиент будет стоять как вкопанный только за счет антискольжения.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage4.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Эстетика</b>
+                  <p>Оригинальный внешний вид выгодно выделит Вас среди конкурентов</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage5.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Статусность</b>
+                  <p>Профессиональный стол показывает статусность перед клиентами и позволит поднять ценник за свои услуги</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage6.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Прямая выгода </b>
+                  <p>Покупать качественный продукт на долгие года намного выгоднее, чем менять некачественные столы каждый год</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage7.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Скидка</b>
+                  <p>До 30% скидка на доставку, у нас эксклюзивные условия по доставке по всей россии.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__left"><img class="lazyload" data-src="./img/svg/advantage8.svg" src="#" alt="image"></div>
+                <div class="item__right"><b>Чистота и опрятность</b>
+                  <p>Максимум площадь прилегания и минимум погрешность отверстий.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sect_reviews" id="sect_review">
+      <div class="container">
+        <div class="sect_reviews__left">
+          <h3 class="title-36"><span>Отзывы</span> говорят сами за себя</h3>
+          <p class="subtitle">Все отзывы настоящие, Вы можете убедиться в этом сами написав любому владельцу стола</p>
+          <p>Равным образом консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками.</p>
+          <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют определения и уточнения существенных финансовых и административных условий. </p>
+          <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют. </p><a class="link" href="#"><img class="lazyload" data-src="./img/svg/instagram.svg" src="#" alt="image"><span>Присоединяйтесь к нам в instagram</span></a>
+        </div>
+        <div class="sect_reviews__right">
+          <div class="swiper-container" id="slider_review" style="width:100%;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews__item"><img class="lazyload" data-src="./img/reviews/item1.jpg" src="#" alt="image"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item"><img class="lazyload" data-src="./img/reviews/item2.jpg" src="#" alt="image"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item"><img class="lazyload" data-src="./img/reviews/item3.jpg" src="#" alt="image"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item"><img class="lazyload" data-src="./img/reviews/item4.jpg" src="#" alt="image"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item"><img class="lazyload" data-src="./img/reviews/item5.jpg" src="#" alt="image"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item"><img class="lazyload" data-src="./img/reviews/item1.jpg" src="#" alt="image"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__item"><img class="lazyload" data-src="./img/reviews/item2.jpg" src="#" alt="image"></div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav slider-nav-review">
+            <button class="slider-prev" type="button"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.2998 1.28596L6.35699 0.343155L0.700134 6.00001L6.35699 11.6569L7.2998 10.7141L2.58575 6.00001L7.2998 1.28596Z" fill="#27B985"/>
+</svg>
+            </button>
+            <button class="slider-next" type="button"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.700142 10.714L1.64295 11.6568L7.29981 5.99999L1.64295 0.343134L0.700141 1.28594L5.41419 5.99999L0.700142 10.714Z" fill="#27B985"/>
+</svg>
+            </button>
+          </div>
+        </div>
+        <div class="sect_reviews__smart">
+          <p>Равным образом консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками.</p>
+          <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют определения и уточнения существенных финансовых и административных условий. </p>
+          <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют. </p><a class="link" href="#"><img class="lazyload" data-src="./img/svg/instagram.svg" src="#" alt="image"><span>Присоединяйтесь к нам в instagram</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="sect_works" id="sect_works">
+      <div class="container">
+        <h3 class="title-36">Наши <span>работы</span></h3>
+        <div class="sect_works__items" id="lightgallery"><a class="item item1" data-src="img/sect_works/1.png"><img src="img/sect_works/1.png" alt="image"></a><a class="item item2" data-src="img/sect_works/2.png"><img src="img/sect_works/2.png" alt="image"></a><a class="item item3" data-src="img/sect_works/3.png"><img src="img/sect_works/3.png" alt="image"></a><a class="item item4" data-src="img/sect_works/4.png"><img src="img/sect_works/4.png" alt="image"></a><a class="item item5" data-src="img/sect_works/5.png"><img src="img/sect_works/5.png" alt="image"></a><a class="item item6" data-src="img/sect_works/6.png"><img src="img/sect_works/6.png" alt="image"></a><a class="item item7" data-src="img/sect_works/7.png"><img src="img/sect_works/7.png" alt="image"></a><a class="item item8" data-src="img/sect_works/8.png"><img src="img/sect_works/8.png" alt="image"></a></div>
+      </div>
+    </section>
+    <section class="sect_contact">
+      <div class="container">
+        <div class="sect_contact__left">
+          <h3 class="title-36"><span>-30% на доставку</span><br> в любой город России</h3>
+          <p>Равным образом консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками.</p>
+          <p>Задача организации, в особенности же дальнейшее развитие различных форм деятельности требуют определения и уточнения существенных финансовых и административных условий.</p>
+        </div>
+        <div class="sect_contact__right"><img src="./img/map.jpg" alt="image"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="form_questions">
+            <form class="js_form" action="/">
+              <div class="form_questions__title">
+                <div class="title">Остались вопросы?</div>
+                <p>Мы свяжемся с Вами в ближайшее время</p>
+              </div>
+              <div class="form_questions__fields">
+                <div class="field-set">
+                  <input class="field" type="text" placeholder="Иванов Иван Иванович" required>
+                </div>
+                <div class="field-set">
+                  <input class="field js_phone_mask" type="text" placeholder="8 800 333 33 33" required>
+                </div>
+                <label class="field-checked">
+                  <input type="checkbox" name="check"><span class="check"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.99989 12.1906C7.83798 12.1906 8.5237 11.5049 8.5237 10.6668C8.5237 9.82866 7.83798 9.14294 6.99989 9.14294C6.16179 9.14294 5.47607 9.82866 5.47607 10.6668C5.47607 11.5049 6.16179 12.1906 6.99989 12.1906Z"/>
+<path d="M11.5715 5.33334H10.8096V3.80953C10.8096 1.70666 9.10288 0 7.00004 0C4.89719 0 3.1905 1.70666 3.1905 3.80953V5.33334H2.4286C1.5905 5.33334 0.904785 6.01906 0.904785 6.85716V14.4762C0.904785 15.3143 1.5905 16 2.4286 16H11.5714C12.4095 16 13.0953 15.3143 13.0953 14.4762V6.85716C13.0953 6.01906 12.4096 5.33334 11.5715 5.33334ZM4.63813 3.80953C4.63813 2.50669 5.69719 1.44763 7.00004 1.44763C8.30288 1.44763 9.36194 2.50669 9.36194 3.80953V5.33334H4.63813V3.80953ZM11.5715 14.4762H2.4286V6.85712H11.5714V14.4762H11.5715Z"/>
+</svg></span><span class="text">Я даю согласие на обработку моих персональных данных</span>
+                </label>
+                <button class="button_green" type="submit"><span>Перезвоните мне</span></button>
+              </div>
+            </form>
+          </div>
+          <div class="smart">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <div class="socilal_links"><a href="#"><svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.07807 7.31265V13L4.63394 12.9984V7.31103H6.53857L6.901 4.95812H4.63394V3.4321C4.63394 2.78833 4.95138 2.16002 5.96587 2.16002H7V0.158706C7 0.158706 6.06241 0 5.16737 0C3.29956 0 2.07807 1.12559 2.07807 3.16678V4.95975H0V7.31265H2.07807Z" fill="white"/>
+</svg></a><a href="#"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.02238 0H2.97759C1.33572 0 0 1.33572 0 2.97759V8.02247C0 9.66426 1.33572 11 2.97759 11H8.02247C9.66426 11 11 9.66426 11 8.02247V2.97759C11 1.33572 9.66426 0 8.02238 0V0ZM5.49999 8.50771C3.8415 8.50771 2.49227 7.15848 2.49227 5.49999C2.49227 3.8415 3.8415 2.49227 5.49999 2.49227C7.15848 2.49227 8.50771 3.8415 8.50771 5.49999C8.50771 7.15848 7.15848 8.50771 5.49999 8.50771ZM8.57963 3.20159C8.08952 3.20159 7.69089 2.80295 7.69089 2.31284C7.69089 1.82273 8.08952 1.42401 8.57963 1.42401C9.06975 1.42401 9.46846 1.82273 9.46846 2.31284C9.46846 2.80295 9.06975 3.20159 8.57963 3.20159Z" fill="white"/>
+<path d="M5.54004 3.54004C4.43729 3.54004 3.54004 4.43722 3.54004 5.54004C3.54004 6.64279 4.43729 7.54004 5.54004 7.54004C6.64286 7.54004 7.54004 6.64279 7.54004 5.54004C7.54004 4.43722 6.64286 3.54004 5.54004 3.54004Z" fill="white"/>
+<path d="M8.57982 2.06885C8.44537 2.06885 8.33594 2.17828 8.33594 2.31273C8.33594 2.44717 8.44537 2.55661 8.57982 2.55661C8.71435 2.55661 8.82378 2.44726 8.82378 2.31273C8.82378 2.1782 8.71435 2.06885 8.57982 2.06885Z" fill="white"/>
+</svg></a><a href="#"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7355 1.43094C12.5861 0.873637 12.1477 0.433898 11.5911 0.283854C10.5739 0.00455158 6.5045 4.93423e-06 6.5045 4.93423e-06C6.5045 4.93423e-06 2.43578 -0.00454198 1.41795 0.262419C0.872334 0.411164 0.421553 0.860646 0.270859 1.4173C0.00259923 2.43448 9.51674e-07 4.54419 9.51674e-07 4.54419C9.51674e-07 4.54419 -0.0025972 6.66429 0.263714 7.67108C0.413109 8.22773 0.851549 8.66747 1.40885 8.81752C2.43643 9.09682 6.49476 9.10137 6.49476 9.10137C6.49476 9.10137 10.5641 9.10591 11.5813 8.8396C12.1373 8.69021 12.5777 8.25112 12.729 7.69446C12.998 6.67793 12.9999 4.56887 12.9999 4.56887C12.9999 4.56887 13.0129 2.44812 12.7355 1.43094ZM5.20282 6.49866L5.20607 2.60141L8.58823 4.55328L5.20282 6.49866Z" fill="white"/>
+</svg></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container"><a class="logo" href="#"><img class="lazyload" data-src="./img/logo.png" src="#" alt="logo"></a>
+          <p class="copy">© 2004 - 2021<br>Petswill. Все права защищены.</p>
+          <div class="list">
+            <ul>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+          </div>
+          <div class="socilal_links"><a href="#"><svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.07807 7.31265V13L4.63394 12.9984V7.31103H6.53857L6.901 4.95812H4.63394V3.4321C4.63394 2.78833 4.95138 2.16002 5.96587 2.16002H7V0.158706C7 0.158706 6.06241 0 5.16737 0C3.29956 0 2.07807 1.12559 2.07807 3.16678V4.95975H0V7.31265H2.07807Z" fill="white"/>
+</svg></a><a href="#"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.02238 0H2.97759C1.33572 0 0 1.33572 0 2.97759V8.02247C0 9.66426 1.33572 11 2.97759 11H8.02247C9.66426 11 11 9.66426 11 8.02247V2.97759C11 1.33572 9.66426 0 8.02238 0V0ZM5.49999 8.50771C3.8415 8.50771 2.49227 7.15848 2.49227 5.49999C2.49227 3.8415 3.8415 2.49227 5.49999 2.49227C7.15848 2.49227 8.50771 3.8415 8.50771 5.49999C8.50771 7.15848 7.15848 8.50771 5.49999 8.50771ZM8.57963 3.20159C8.08952 3.20159 7.69089 2.80295 7.69089 2.31284C7.69089 1.82273 8.08952 1.42401 8.57963 1.42401C9.06975 1.42401 9.46846 1.82273 9.46846 2.31284C9.46846 2.80295 9.06975 3.20159 8.57963 3.20159Z" fill="white"/>
+<path d="M5.54004 3.54004C4.43729 3.54004 3.54004 4.43722 3.54004 5.54004C3.54004 6.64279 4.43729 7.54004 5.54004 7.54004C6.64286 7.54004 7.54004 6.64279 7.54004 5.54004C7.54004 4.43722 6.64286 3.54004 5.54004 3.54004Z" fill="white"/>
+<path d="M8.57982 2.06885C8.44537 2.06885 8.33594 2.17828 8.33594 2.31273C8.33594 2.44717 8.44537 2.55661 8.57982 2.55661C8.71435 2.55661 8.82378 2.44726 8.82378 2.31273C8.82378 2.1782 8.71435 2.06885 8.57982 2.06885Z" fill="white"/>
+</svg></a><a href="#"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7355 1.43094C12.5861 0.873637 12.1477 0.433898 11.5911 0.283854C10.5739 0.00455158 6.5045 4.93423e-06 6.5045 4.93423e-06C6.5045 4.93423e-06 2.43578 -0.00454198 1.41795 0.262419C0.872334 0.411164 0.421553 0.860646 0.270859 1.4173C0.00259923 2.43448 9.51674e-07 4.54419 9.51674e-07 4.54419C9.51674e-07 4.54419 -0.0025972 6.66429 0.263714 7.67108C0.413109 8.22773 0.851549 8.66747 1.40885 8.81752C2.43643 9.09682 6.49476 9.10137 6.49476 9.10137C6.49476 9.10137 10.5641 9.10591 11.5813 8.8396C12.1373 8.69021 12.5777 8.25112 12.729 7.69446C12.998 6.67793 12.9999 4.56887 12.9999 4.56887C12.9999 4.56887 13.0129 2.44812 12.7355 1.43094ZM5.20282 6.49866L5.20607 2.60141L8.58823 4.55328L5.20282 6.49866Z" fill="white"/>
+</svg></a></div><a class="block_text_right first" href="mailto:admin@petswill.ru">
+            <div class="text"><span>Напишите нам</span><b>admin@petswill.ru</b></div>
+            <div class="image"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.13237C0 6.42984 0.368598 5.77883 0.971008 5.41738L8.97101 0.617381C9.60437 0.237362 10.3956 0.237362 11.029 0.617381L19.029 5.41738C19.6314 5.77883 20 6.42984 20 7.13237V18C20 19.1046 19.1046 20 18 20H2C0.895431 20 0 19.1046 0 18V7.13237ZM18 7.8685V18H2V7.86851L10 13.2018L18 7.8685ZM16.6835 6.34247L10 2.33237L3.31649 6.34247L10 10.7981L16.6835 6.34247Z"/>
+</svg>
+            </div></a><a class="block_text_right last" href="tel:73422251229">
+            <div class="text"><span>Есть вопросы? Звоните</span><b>+7 (342) 225-12-29</b></div>
+            <div class="image"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.7068 10.293C15.3158 9.90201 14.6838 9.90201 14.2928 10.293L12.6988 11.887C11.9598 11.667 10.5808 11.167 9.70685 10.293C8.83285 9.41901 8.33285 8.04001 8.11285 7.30101L9.70685 5.70701C10.0978 5.31601 10.0978 4.68401 9.70685 4.29301L5.70685 0.293006C5.31585 -0.0979941 4.68385 -0.0979941 4.29285 0.293006L1.58085 3.00501C1.20085 3.38501 0.986845 3.90701 0.994845 4.44001C1.01785 5.86401 1.39485 10.81 5.29285 14.708C9.19085 18.606 14.1368 18.982 15.5618 19.006C15.5668 19.006 15.5848 19.006 15.5898 19.006C16.1178 19.006 16.6168 18.798 16.9948 18.42L19.7068 15.708C20.0978 15.317 20.0978 14.685 19.7068 14.294L15.7068 10.293ZM15.5798 17.005C14.3318 16.984 10.0618 16.649 6.70685 13.293C3.34085 9.92701 3.01485 5.64201 2.99485 4.41901L4.99985 2.41401L7.58585 5.00001L6.29285 6.29301C6.05385 6.53101 5.95185 6.87501 6.02085 7.20501C6.04485 7.32001 6.63185 10.047 8.29185 11.707C9.95185 13.367 12.6788 13.954 12.7938 13.978C13.1268 14.049 13.4678 13.946 13.7058 13.707L14.9998 12.414L17.5858 15L15.5798 17.005Z"/>
+</svg>
+            </div></a>
+        </div>
+      </div>
+    </footer>
+    <div class="popup_modal" id="modal_contact">
+      <div class="popup_modal__social">
+        <p>Присоединяйтесь к нам в социальных сетях</p>
+        <div class="socilal_links"><a href="#"><svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.07807 7.31265V13L4.63394 12.9984V7.31103H6.53857L6.901 4.95812H4.63394V3.4321C4.63394 2.78833 4.95138 2.16002 5.96587 2.16002H7V0.158706C7 0.158706 6.06241 0 5.16737 0C3.29956 0 2.07807 1.12559 2.07807 3.16678V4.95975H0V7.31265H2.07807Z" fill="white"/>
+</svg></a><a href="#"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.02238 0H2.97759C1.33572 0 0 1.33572 0 2.97759V8.02247C0 9.66426 1.33572 11 2.97759 11H8.02247C9.66426 11 11 9.66426 11 8.02247V2.97759C11 1.33572 9.66426 0 8.02238 0V0ZM5.49999 8.50771C3.8415 8.50771 2.49227 7.15848 2.49227 5.49999C2.49227 3.8415 3.8415 2.49227 5.49999 2.49227C7.15848 2.49227 8.50771 3.8415 8.50771 5.49999C8.50771 7.15848 7.15848 8.50771 5.49999 8.50771ZM8.57963 3.20159C8.08952 3.20159 7.69089 2.80295 7.69089 2.31284C7.69089 1.82273 8.08952 1.42401 8.57963 1.42401C9.06975 1.42401 9.46846 1.82273 9.46846 2.31284C9.46846 2.80295 9.06975 3.20159 8.57963 3.20159Z" fill="white"/>
+<path d="M5.54004 3.54004C4.43729 3.54004 3.54004 4.43722 3.54004 5.54004C3.54004 6.64279 4.43729 7.54004 5.54004 7.54004C6.64286 7.54004 7.54004 6.64279 7.54004 5.54004C7.54004 4.43722 6.64286 3.54004 5.54004 3.54004Z" fill="white"/>
+<path d="M8.57982 2.06885C8.44537 2.06885 8.33594 2.17828 8.33594 2.31273C8.33594 2.44717 8.44537 2.55661 8.57982 2.55661C8.71435 2.55661 8.82378 2.44726 8.82378 2.31273C8.82378 2.1782 8.71435 2.06885 8.57982 2.06885Z" fill="white"/>
+</svg></a><a href="#"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7355 1.43094C12.5861 0.873637 12.1477 0.433898 11.5911 0.283854C10.5739 0.00455158 6.5045 4.93423e-06 6.5045 4.93423e-06C6.5045 4.93423e-06 2.43578 -0.00454198 1.41795 0.262419C0.872334 0.411164 0.421553 0.860646 0.270859 1.4173C0.00259923 2.43448 9.51674e-07 4.54419 9.51674e-07 4.54419C9.51674e-07 4.54419 -0.0025972 6.66429 0.263714 7.67108C0.413109 8.22773 0.851549 8.66747 1.40885 8.81752C2.43643 9.09682 6.49476 9.10137 6.49476 9.10137C6.49476 9.10137 10.5641 9.10591 11.5813 8.8396C12.1373 8.69021 12.5777 8.25112 12.729 7.69446C12.998 6.67793 12.9999 4.56887 12.9999 4.56887C12.9999 4.56887 13.0129 2.44812 12.7355 1.43094ZM5.20282 6.49866L5.20607 2.60141L8.58823 4.55328L5.20282 6.49866Z" fill="white"/>
+</svg></a></div>
+      </div>
+      <div class="popup_modal__contact mb-40"><a class="block_text_right" href="tel:73422251229">
+          <div class="text"><span>Есть вопросы? Звоните</span><b>+7 (342) 225-12-29</b></div>
+          <div class="image"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.7068 10.293C15.3158 9.90201 14.6838 9.90201 14.2928 10.293L12.6988 11.887C11.9598 11.667 10.5808 11.167 9.70685 10.293C8.83285 9.41901 8.33285 8.04001 8.11285 7.30101L9.70685 5.70701C10.0978 5.31601 10.0978 4.68401 9.70685 4.29301L5.70685 0.293006C5.31585 -0.0979941 4.68385 -0.0979941 4.29285 0.293006L1.58085 3.00501C1.20085 3.38501 0.986845 3.90701 0.994845 4.44001C1.01785 5.86401 1.39485 10.81 5.29285 14.708C9.19085 18.606 14.1368 18.982 15.5618 19.006C15.5668 19.006 15.5848 19.006 15.5898 19.006C16.1178 19.006 16.6168 18.798 16.9948 18.42L19.7068 15.708C20.0978 15.317 20.0978 14.685 19.7068 14.294L15.7068 10.293ZM15.5798 17.005C14.3318 16.984 10.0618 16.649 6.70685 13.293C3.34085 9.92701 3.01485 5.64201 2.99485 4.41901L4.99985 2.41401L7.58585 5.00001L6.29285 6.29301C6.05385 6.53101 5.95185 6.87501 6.02085 7.20501C6.04485 7.32001 6.63185 10.047 8.29185 11.707C9.95185 13.367 12.6788 13.954 12.7938 13.978C13.1268 14.049 13.4678 13.946 13.7058 13.707L14.9998 12.414L17.5858 15L15.5798 17.005Z"/>
+</svg>
+          </div></a><a class="block_text_right" href="mailto:admin@petswill.ru">
+          <div class="text"><span>Напишите нам</span><b>admin@petswill.ru</b></div>
+          <div class="image"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.13237C0 6.42984 0.368598 5.77883 0.971008 5.41738L8.97101 0.617381C9.60437 0.237362 10.3956 0.237362 11.029 0.617381L19.029 5.41738C19.6314 5.77883 20 6.42984 20 7.13237V18C20 19.1046 19.1046 20 18 20H2C0.895431 20 0 19.1046 0 18V7.13237ZM18 7.8685V18H2V7.86851L10 13.2018L18 7.8685ZM16.6835 6.34247L10 2.33237L3.31649 6.34247L10 10.7981L16.6835 6.34247Z"/>
+</svg>
+          </div></a></div>
+      <div class="popup_modal__bottom">
+        <button class="button_green button_header_smart_call" type="button"><span>Перезвоните мне</span></button>
+      </div>
+    </div>
+    <div class="popup_modal" id="modal_menu">
+      <div class="popup_modal__nav mb-40">
+        <ul>
+          <li><a href="#sect_calc">Узнать цену</a></li>
+          <li><a href="#sect_video">Видеопрезентация</a></li>
+          <li><a href="#sect_review">Отзывы</a></li>
+        </ul>
+      </div>
+      <div class="popup_modal__contact mt-auto mb-40"><a class="block_text_right" href="tel:73422251229">
+          <div class="text"><span>Есть вопросы? Звоните</span><b>+7 (342) 225-12-29</b></div>
+          <div class="image"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.7068 10.293C15.3158 9.90201 14.6838 9.90201 14.2928 10.293L12.6988 11.887C11.9598 11.667 10.5808 11.167 9.70685 10.293C8.83285 9.41901 8.33285 8.04001 8.11285 7.30101L9.70685 5.70701C10.0978 5.31601 10.0978 4.68401 9.70685 4.29301L5.70685 0.293006C5.31585 -0.0979941 4.68385 -0.0979941 4.29285 0.293006L1.58085 3.00501C1.20085 3.38501 0.986845 3.90701 0.994845 4.44001C1.01785 5.86401 1.39485 10.81 5.29285 14.708C9.19085 18.606 14.1368 18.982 15.5618 19.006C15.5668 19.006 15.5848 19.006 15.5898 19.006C16.1178 19.006 16.6168 18.798 16.9948 18.42L19.7068 15.708C20.0978 15.317 20.0978 14.685 19.7068 14.294L15.7068 10.293ZM15.5798 17.005C14.3318 16.984 10.0618 16.649 6.70685 13.293C3.34085 9.92701 3.01485 5.64201 2.99485 4.41901L4.99985 2.41401L7.58585 5.00001L6.29285 6.29301C6.05385 6.53101 5.95185 6.87501 6.02085 7.20501C6.04485 7.32001 6.63185 10.047 8.29185 11.707C9.95185 13.367 12.6788 13.954 12.7938 13.978C13.1268 14.049 13.4678 13.946 13.7058 13.707L14.9998 12.414L17.5858 15L15.5798 17.005Z"/>
+</svg>
+          </div></a></div>
+      <div class="popup_modal__bottom mt-0">
+        <button class="button_green button_header_smart_call" type="button"><span>Перезвоните мне</span></button>
+      </div>
+    </div>
+    <div class="popup_modal popup_modal_all" id="modal_phone">
+      <div class="popup_modal__header"><b class="title">Мы вам перезвоним</b>
+        <p class="desc">Мы свяжемся с Вами в ближайшее время</p>
+        <button class="popup_modal__close" type="button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#2E3A59"/>
+</svg>
+        </button>
+      </div>
+      <form class="popup_modal__form js_form" action="/">
+        <div class="field-set-group">
+          <div class="field-set">
+            <input class="field" type="text" placeholder="Иванов Иван Иванович" required>
+          </div>
+          <div class="field-set">
+            <input class="field js_phone_mask" type="text" placeholder="8 800 333 33 33" required>
+          </div>
+        </div>
+        <div class="field-set-group">
+          <label class="field-checked">
+            <input type="checkbox" name="check" required><span class="check"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.99989 12.1906C7.83798 12.1906 8.5237 11.5049 8.5237 10.6668C8.5237 9.82866 7.83798 9.14294 6.99989 9.14294C6.16179 9.14294 5.47607 9.82866 5.47607 10.6668C5.47607 11.5049 6.16179 12.1906 6.99989 12.1906Z"/>
+<path d="M11.5715 5.33334H10.8096V3.80953C10.8096 1.70666 9.10288 0 7.00004 0C4.89719 0 3.1905 1.70666 3.1905 3.80953V5.33334H2.4286C1.5905 5.33334 0.904785 6.01906 0.904785 6.85716V14.4762C0.904785 15.3143 1.5905 16 2.4286 16H11.5714C12.4095 16 13.0953 15.3143 13.0953 14.4762V6.85716C13.0953 6.01906 12.4096 5.33334 11.5715 5.33334ZM4.63813 3.80953C4.63813 2.50669 5.69719 1.44763 7.00004 1.44763C8.30288 1.44763 9.36194 2.50669 9.36194 3.80953V5.33334H4.63813V3.80953ZM11.5715 14.4762H2.4286V6.85712H11.5714V14.4762H11.5715Z"/>
+</svg></span><span class="text">Я даю согласие на обработку моих персональных данных</span>
+          </label>
+          <div class="field-button">
+            <button class="button_green" type="submit"><span>Перезвоните мне</span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="popup_modal popup_modal_all" id="modal_message">
+      <div class="popup_modal__header"><b class="title">Напишите нам</b>
+        <p class="desc">Мы свяжемся с Вами в ближайшее время</p>
+        <button class="popup_modal__close" type="button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#2E3A59"/>
+</svg>
+        </button>
+      </div>
+      <form class="popup_modal__form js_form" action="/">
+        <div class="field-set-group">
+          <div class="field-set">
+            <input class="field" type="text" placeholder="Иванов Иван Иванович" required>
+          </div>
+          <div class="field-set">
+            <input class="field js_phone_mask" type="text" placeholder="8 800 333 33 33" required>
+          </div>
+        </div>
+        <div class="field-set field-not">
+          <textarea class="field" name="message" placeholder="Опишите свой вопрос или проблему"></textarea>
+        </div>
+        <div class="field-set-group">
+          <div class="field-button">
+            <button class="button_green" type="submit"><span>Напишите мне</span></button>
+          </div>
+          <label class="field-checked">
+            <input type="checkbox" name="check3" required><span class="check"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.99989 12.1906C7.83798 12.1906 8.5237 11.5049 8.5237 10.6668C8.5237 9.82866 7.83798 9.14294 6.99989 9.14294C6.16179 9.14294 5.47607 9.82866 5.47607 10.6668C5.47607 11.5049 6.16179 12.1906 6.99989 12.1906Z"/>
+<path d="M11.5715 5.33334H10.8096V3.80953C10.8096 1.70666 9.10288 0 7.00004 0C4.89719 0 3.1905 1.70666 3.1905 3.80953V5.33334H2.4286C1.5905 5.33334 0.904785 6.01906 0.904785 6.85716V14.4762C0.904785 15.3143 1.5905 16 2.4286 16H11.5714C12.4095 16 13.0953 15.3143 13.0953 14.4762V6.85716C13.0953 6.01906 12.4096 5.33334 11.5715 5.33334ZM4.63813 3.80953C4.63813 2.50669 5.69719 1.44763 7.00004 1.44763C8.30288 1.44763 9.36194 2.50669 9.36194 3.80953V5.33334H4.63813V3.80953ZM11.5715 14.4762H2.4286V6.85712H11.5714V14.4762H11.5715Z"/>
+</svg></span><span class="text">Я даю согласие на обработку моих персональных данных</span>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="popup_modal popup_modal_all" id="modal_success">
+      <div class="popup_modal__header">
+        <button class="popup_modal__close" type="button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#2E3A59"/>
+</svg>
+        </button>
+      </div>
+      <div class="popup_modal__success">
+        <div class="image"><svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.79032 8.44177L17.7453 0.486816L19.513 2.25458L11.5581 10.2095L9.79032 8.44177Z" fill="#27AE60"/>
+<path d="M8.02256 13.7451L1.83537 7.5579L0.0676041 9.32567L6.25479 15.5129L8.02256 13.7451Z" fill="#27AE60"/>
+<path d="M11.5581 11.9773L7.13867 7.5579L5.37091 9.32567L11.5581 15.5129L23.9325 3.13847L22.1647 1.3707L11.5581 11.9773Z" fill="#27AE60"/>
+</svg>
+        </div>
+        <div class="title">Спасибо за заявку!</div>
+        <p class="desc">Мы свяжемся с Вами в ближайшее время</p>
+      </div>
+    </div>
+    <button class="button_scroll_top" type="button" onclick="return up()"><svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.0711 9.94974L17.4854 8.53553L9.00007 0.0502468L0.514787 8.53553L1.929 9.94974L9.00007 2.87867L16.0711 9.94974Z" fill="#27B985"/>
+</svg>
+    </button>
+    <script src="./libs/lazysizes/lazysizes.min.js"></script>
+    <script src="./libs/imask/imask.js"></script>
+    <script src="./libs/tingle/tingle.min.js"></script>
+    <script src="./libs/rangeslider/rangeslider.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/lightgallery/lightgallery.min.js"></script>
+    <script src="./libs/lightgallery/lg-thumbnail.min.js"></script>
+    <script src="./libs/lightgallery/lg-zoom.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/initCalc.js"></script>
+  </body>
+</html>
